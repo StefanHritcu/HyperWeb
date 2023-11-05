@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future is Coming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <nav class="nav-menu">
+
+        <a href="index.html" class="logo" 
+        title="Come back to the main page">
+        HyperWeb <br class="break-title"> Connect</a>
+
+        <div class="nav-list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+<!--NOBA MOLTO BENE: DEVI AGGIUNGERE AGLI HREF ######### PER NON FAR RICARICARE LA PAGINA-->
+        <a href="#"><img src="img/burger-btn.png" class="trigger-btn"
+             alt="trigger link"></a>
+    </nav>
+
+    <header></header>
+
+    <main class="main1">
+        <div class="tags">
+            <h1><span><i class="fas fa-hashtag"></i></span>EASY</h1>
+            <h1><span><i class="fas fa-hashtag"></i></span>FAST</h1>
+            <h1 class="infinity-gb"><span><i class="fas fa-hashtag"></i></span>UNLIMITED-GB</h1>
+        </div>
+
+        <div class="card-offers">
+
+            <div class="card">
+                <a href="#" title="Basic Connect Plan"><img src="img/sad-smile.png" class="card-imageOffer" alt=""></a>
+
+                
+                <h1 class="title-card1">Basic Connect Plan</h1>
+                <h2 class="no-good">20GB*/<span>100 Minutes*</span></h2>
+                <p class="no-good">€27.99/Month</p>
+                <h3>For more info click <a href="#" class="more-info">Here</a></h3>
+
+
+            </div>
+            <div class="card" id="card2">
+                <a href="#" title="Advanced Package"><img src="img/neutral-smile.png" class="card-imageOffer" alt=""></a>
+                
+                <h1 class="title-card2">Advanced Package</h1>
+                <h2 class="no-good">100GB*/<span>1.000 Minutes*</span></h2>
+                <p class="good-price">€32.99/Month</p>
+                <h3>For more info click <a href="#" class="more-info">Here</a></h3>
+
+
+            </div>
+            <div class="card" id="card3">
+                <a href="#" title="Ultimate Smart"><img src="img/normal-smile.png" class="card-imageOffer" alt=""></a>
+
+                <h1 class="title-card3">Ultimate Smart</h1>
+                <h2 class="all-inclusive">300GB*/<span>EU-Unlimited-Minutes*</span></h2>
+                <p class="no-good">€49.99/Month</p>
+                <h3>For more info click <a href="#" class="more-info">Here</a></h3>
+
+
+            </div>
+            <div class="card">
+                <a href="#" title="Quantum Package"><img src="img/happy-smilee.png" class="card-imageOffer" alt=""></a>
+                
+
+                <h1 class="title-card4">Quantum Package</h1>
+                <h2 class="all-inclusive">800GB*/<span>ALL-INCLUSIVE*</span></h2>
+                <p class="good-price">€59.99/Month</p>
+                <h3>For more info click <a href="#" class="more-info">Here</a></h3>
+
+
+            </div>
+
+        </div>
+
+        <a href="" class="mobile-card"><h1>"Choose the rate that best aligns with your unique 
+            telecommunications needs among the four available options." 
+            <br><button class="button-choose">Choose Now</button></h1></a>
+
+    </main>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const triggerButton = document.querySelector(".trigger-btn");
+            const navList = document.querySelector(".nav-list");
+            const tags = document.querySelector(".tags");
+            const cardOffers = document.querySelector(".card-offers");
+            const mobileCard = document.querySelector(".mobile-card");
+
+
+            let isOpen = false;
+
+            triggerButton.addEventListener("click", function(){
+                if(isOpen){
+                    navList.style.left = "-100%";
+                    tags.style.display = "block";
+                    cardOffers.style.display = "";
+                    mobileCard.style.display = "";
+                    isOpen = false;
+                }else{
+                    navList.style.left = "0";
+                    tags.style.display = "none";
+                    cardOffers.style.display = "none";
+                    mobileCard.style.display = "none";
+                    isOpen = true;
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+/*** BODY ***/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+/*** HEADER ***/
+header{
+    background-image: url(img/bg\ desktop\ -\ Copia.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+/*** NAV-MENU ***/
+.nav-menu{
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.nav-menu a{
+    color: white;
+}
+/*** LOGO ***/
+.logo{
+    text-decoration: none;
+    font-size: 50px;
+    text-shadow: 0 0 10px violet, 0 0 10px violet, 0 0 10px violet, 0 0 10px violet;
+    font-weight: 700;
+}
+.break-title{
+    display: none;
+}
+/*** NAV-LIST ***/
+.nav-list{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+.nav-list ul{
+    display: flex;
+    font-size: 24px;
+    list-style: none;
+}
+.nav-list a{
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+.nav-list a:hover{
+    box-shadow: 0 0 16px violet, 0 0 16px violet, 0 0 16px violet, 0 0 16px violet;
+}
+
+/*** TRIGGER-BTN ***/
+.trigger-btn{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 35px;
+    top: 30px;
+    right: 50px;
+}
+/*** MAIN1 ***/
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*** TAGS ***/
+.tags{
+    position: absolute;
+    top: 200px;
+    display: flex;
+    font-size: 30px;
+}
+.tags h1{
+    margin-right: 40px;
+    color: rgb(255, 251, 0);
+    background-color: blueviolet;
+    padding: 0 14px;
+}
+.tags span{
+    color: rgb(255, 70, 70);
+    
+}
+/*** CARD-OFFERS ***/
+.card-offers{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 400px;
+    height: 300px;
+}
+/*** CARD ***/
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    height: 100%;
+    border: 1px solid blueviolet;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 4px;
+    background-color: #fff;
+    box-shadow: 0 0 20px blueviolet, 0 0 20px blueviolet, 0 0 20px blueviolet, 0 0 20px blueviolet;
+}
+/*** CARD-IMAGE ***/
+.card-imageOffer{
+    margin-top: 20px;
+}
+/*** TITLE-CARD ***/
+.title-card1{
+    font-size: 22px;
+    background-color: rgb(253, 30, 14);
+    padding: 0 6px;
+}
+.title-card2{
+    font-size: 22px;
+    background-color: rgb(253, 121, 14);
+    padding: 0 6px;
+}
+.title-card3{
+    font-size: 22px;
+    background-color: rgb(14, 253, 66);
+    padding: 0 6px;
+}
+.title-card4{
+    font-size: 22px;
+    background-color: rgb(253, 14, 173);
+    padding: 0 6px;
+}
+/*** H2 AND SPAN ***/
+.card span:nth-child(1){
+    font-size: 12px;
+}
+.all-inclusive{
+    background-color: rgb(14, 253, 66);
+}
+.good-price{
+    background-color: rgb(14, 253, 66);
+}
+.no-good{
+    background-color: rgb(253, 30, 14);
+}
+/*** MOBILE-CARD ***/
+.mobile-card{
+    display: none;
+    position: absolute;
+    color: red;
+    bottom: 40px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: violet;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button-choose{
+    margin: 20px 0;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+.button-choose:hover{
+    background-color: blueviolet;
+}
+/*** MEDIA QUERY ***/
+/*************** 10290 PX ***************/
+@media (max-width: 1290px){
+    #card3{
+        display: none;
+    }
+}
+/*************** 1030 PX ***************/
+@media (max-width: 1030px){
+    .tags{
+        font-size: 18px;
+    }
+    .tags h1{
+        margin-right: 20px;
+    }
+}
+/*************** 970 PX ***************/
+@media (max-width: 970px){
+    .break-title{
+        display: block;
+    }
+}
+/*************** 960 PX ***************/
+@media (max-width: 960px){
+    #card2{
+        display: none;
+    }
+}
+/*************** 780 PX ***************/
+@media (max-width: 780px){
+    .nav-list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(184, 178, 178, 0.5);
+        left: -100%;
+        transition: all 0.5s ease;
+    }
+    .nav-list ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .nav-list li{
+        margin-bottom: 70px;
+    }
+    .nav-list a{
+        font-size: 32px;
+        background-color: #fff;
+        color: violet;
+        box-shadow: 0 0 10px violet, 0 0 10px violet, 0 0 10px violet, 0 0 10px violet;
+    }
+    .trigger-btn{
+        display: block;
+    }
+    header{
+        background-image: url(img/bg\ image.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+/*************** 640 PX ***************/
+@media (max-width: 640px){
+    .tags{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+    .tags h1{
+        margin-bottom: 40px;
+    }
+    .card-offers{
+        display: none;
+    }
+    .mobile-card{
+        display: block;
+    }
+}
+/*************** 500PX ***************/
+@media (max-width: 500px){
+    .nav-menu{
+        padding-left: 10px;
+    }
+}
+/*************** 470 PX ***************/
+@media (max-width: 470px){
+    .mobile-card{
+        font-size: 10px;
+    }
+}
+/*************** 360 PX ***************/
+@media (max-width: 360px){
+    .trigger-btn{
+        right: 10px;
+    }
+    .logo{
+        font-size: 40px;
+    }
+}
+/*************** 342 PX ***************/
+@media (max-width: 342px){
+    .mobile-card{
+       bottom: 10px;
+    }
+}
+/*************** 320 PX ***************/
+@media (max-width: 320px){
+    .infinity-gb{
+       font-size: 30px;
+    }
+}
